@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>URL Shortener Microservice</title>
+  <link rel="shortcut icon" href="https://cdn.glitch.com/ec4b4b59-9792-4b58-85ee-c277716b70b1%2Ffavicon.ico?v=1564588883383" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="/public/style.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="container-social">
+      <div class="text-right">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/sonyacooley/" title="linkedin" target="blank"><i
+                class="fa fa-linkedin fa-2x"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sonnerz" title="github" target="blank"><i
+                class="fa fa-github-square fa-2x"></i></a>
+          </li>
+          <li>
+            <a href="https://www.freecodecamp.org/sonnerz" title="free code camp" target="blank"><i
+                class="fa fa-free-code-camp fa-2x"></i></a>
+          </li>
+          <li>
+            <a class="nav-link text-light" href="mailto:sonya.cooley@mail.com" target="_blank" title="email me"><i
+                class="fa fa-envelope-square fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h1>URL Shortener Microservice</h1>
+
+    <h2>Create a Short URL </h2>
+
+    <form action="api/shorturl/new" method="POST">
+      <label for="url_input">Enter a URL to be shortened</label>
+      <input id="url_input" type="text" name="url" value="https://www.freecodecamp.org">
+      <input type="submit" value="SUBMIT URL">
+    </form>
+    <h3>Example:</h3>
+    <a href="https://mirage-beat.glitch.me/api/shorturl/2">https://mirage-beat.glitch.me/api/shorturl/2</a> will
+    redirect to http://www.youtube.com
+  </div>
+</body>
+
+
+</html>
